@@ -1,6 +1,6 @@
 # ServiceNowAdministration-internship
 
-🚫 Prevent User Deletion if Assigned to an Incident
+#🚫 Prevent User Deletion if Assigned to an Incident
 🔐 A ServiceNow Data Integrity Protection Project
 📖 Overview
 
@@ -23,7 +23,7 @@ Incidents are reassigned to another user
 
 This ensures data integrity, accountability, and seamless workflow continuity.
 
-🎯 Project Objectives
+#🎯 Project Objectives
 
 ✅ Prevent accidental deletion of users with active incident assignments
 ✅ Maintain referential integrity within ITSM tables
@@ -31,7 +31,7 @@ This ensures data integrity, accountability, and seamless workflow continuity.
 ✅ Demonstrate server-side validation using Business Rules
 ✅ Showcase practical GlideRecord usage
 
-🧠 Real-World Problem Statement
+#🧠 Real-World Problem Statement
 
 In enterprise environments like those using ServiceNow, incidents are linked to users via reference fields.
 
@@ -47,7 +47,7 @@ Compliance and auditing processes are affected
 
 This solution proactively prevents such system inconsistencies.
 
-🛠️ Technology Stack
+#🛠️ Technology Stack
 Component	Details
 Platform	ServiceNow (Personal Developer Instance)
 Module	ITSM
@@ -85,7 +85,7 @@ If no incidents exist:
 
 ✅ Deletion proceeds normally
 
-💻 Core Script Logic
+#💻 Core Script Logic
 (function executeRule(current, previous /*null when async*/) {
 
     var incGr = new GlideRecord('incident');
@@ -107,7 +107,7 @@ If no incidents exist:
 ✔ Maintains relational integrity
 ✔ Lightweight and scalable
 
-📊 Architecture Flow
+#📊 Architecture Flow
 
 User Delete Attempt
 ⬇
@@ -137,7 +137,7 @@ Data integrity enforcement in ITSM systems
 
 Enterprise-safe deletion control mechanism
 
-📈 Future Enhancements
+#📈 Future Enhancements
 
 ✨ Allow deletion only if incidents are in "Closed" state
 ✨ Display incident count in error message
@@ -145,7 +145,7 @@ Enterprise-safe deletion control mechanism
 ✨ Convert logic into reusable Script Include
 ✨ Implement similar rule for Change / Problem tables
 
-🏁 Conclusion
+#🏁 Conclusion
 
 This project demonstrates a real-world enterprise safeguard in ServiceNow that prevents system inconsistency and protects workflow continuity.
 
